@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!-- 
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.0 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            GitLearn in 15 minutes | 
+        
+        Marnner
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="marnner">
+    <meta name="description" content="Just do it">
+    <meta name="keywords" content="null,git">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Marnner">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="GitLearn in 15 minutes | Marnner">
+    <meta property="og:description" content="Just do it">
+    <meta property="og:article:tag" content="git"> 
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/queue.js"></script>
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#学习来源：https-try-github-io-levels-1-challenges-1"><span class="post-toc-number">1.</span> <span class="post-toc-text">学习来源：https://try.github.io/levels/1/challenges/1</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Git是一个开源的分布式版本控制系统（DVCS），可以显着改善您在项目中的工作方式和协作。-Git允许您保留对本地文件进行重大更改的历史记录。它还可以通过像GitHub这样的远程托管服务来备份这个历史记录。"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">Git是一个开源的分布式版本控制系统（DVCS），可以显着改善您在项目中的工作方式和协作。 Git允许您保留对本地文件进行重大更改的历史记录。它还可以通过像GitHub这样的远程托管服务来备份这个历史记录。</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-1-Got-15-minutes-and-want-to-learn-Git"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.1 Got 15 minutes and want to learn Git?</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-2-Checking-the-Status-（检查状态）"><span class="post-toc-number">2.</span> <span class="post-toc-text">1.2 Checking the Status （检查状态）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-3-Adding-amp-Committing"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.3 Adding & Committing</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-4-Adding-Changes"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">1.4 Adding Changes</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-5-Checking-for-Changes"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">1.5 Checking for Changes</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-6-Committing"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">1.6 Committing</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-7-Adding-All-Changes"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">1.7 Adding All Changes</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-8-Committing-All-Changes"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">1.8 Committing All Changes</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-9-History"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">1.9 History</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-10-Remote-Repositories（远程仓库）"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">1.10 Remote Repositories（远程仓库）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-11-Pushing-Remotely"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">1.11 Pushing Remotely</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-12-Pulling-Remotely"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">1.12 Pulling Remotely</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-13-Differences"><span class="post-toc-number">2.11.</span> <span class="post-toc-text">1.13 Differences</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-14-Staged-Differences"><span class="post-toc-number">2.12.</span> <span class="post-toc-text">1.14 Staged Differences</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-15-Staged-Differences-cont’d"><span class="post-toc-number">2.13.</span> <span class="post-toc-text">1.15 Staged Differences (cont’d)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-16-Resetting-the-Stage"><span class="post-toc-number">2.14.</span> <span class="post-toc-text">1.16 Resetting the Stage</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-17-Undo"><span class="post-toc-number">2.15.</span> <span class="post-toc-text">1.17 Undo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-18-Branching-Out"><span class="post-toc-number">2.16.</span> <span class="post-toc-text">1.18 Branching Out</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-20-Removing-All-The-Things"><span class="post-toc-number">2.17.</span> <span class="post-toc-text">1.20 Removing All The Things</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-21-Commiting-Branch-Changes"><span class="post-toc-number">2.18.</span> <span class="post-toc-text">1.21 Commiting Branch Changes</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-22-Switching-Back-to-master"><span class="post-toc-number">2.19.</span> <span class="post-toc-text">1.22 Switching Back to master</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-23-Preparing-to-Merge"><span class="post-toc-number">2.20.</span> <span class="post-toc-text">1.23 Preparing to Merge</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-24-Keeping-Things-Clean"><span class="post-toc-number">2.21.</span> <span class="post-toc-text">1.24 Keeping Things Clean</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-25-The-Final-Push"><span class="post-toc-number">2.22.</span> <span class="post-toc-text">1.25 The Final Push</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                GitLearn in 15 minutes
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>marnner</strong>
+        <span>4月 11, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/git/">git</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2017/04/11/GitLearn in 15 minutes/" class="leancloud-views_num" data-flag-title="GitLearn in 15 minutes">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=GitLearn in 15 minutes&url=http://yoursite.com//2017/04/11/GitLearn in 15 minutes/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=GitLearn in 15 minutes&url=http://yoursite.com//2017/04/11/GitLearn in 15 minutes/index.html&via=marnner" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/04/11/GitLearn in 15 minutes/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/04/11/GitLearn in 15 minutes/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="学习来源：https-try-github-io-levels-1-challenges-1"><a href="#学习来源：https-try-github-io-levels-1-challenges-1" class="headerlink" title="学习来源：https://try.github.io/levels/1/challenges/1"></a>学习来源：<a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">https://try.github.io/levels/1/challenges/1</a></h2><h4 id="Git是一个开源的分布式版本控制系统（DVCS），可以显着改善您在项目中的工作方式和协作。-Git允许您保留对本地文件进行重大更改的历史记录。它还可以通过像GitHub这样的远程托管服务来备份这个历史记录。"><a href="#Git是一个开源的分布式版本控制系统（DVCS），可以显着改善您在项目中的工作方式和协作。-Git允许您保留对本地文件进行重大更改的历史记录。它还可以通过像GitHub这样的远程托管服务来备份这个历史记录。" class="headerlink" title="Git是一个开源的分布式版本控制系统（DVCS），可以显着改善您在项目中的工作方式和协作。 Git允许您保留对本地文件进行重大更改的历史记录。它还可以通过像GitHub这样的远程托管服务来备份这个历史记录。"></a>Git是一个开源的分布式版本控制系统（DVCS），可以显着改善您在项目中的工作方式和协作。 Git允许您保留对本地文件进行重大更改的历史记录。它还可以通过像GitHub这样的远程托管服务来备份这个历史记录。</h4><h3 id="1-1-Got-15-minutes-and-want-to-learn-Git"><a href="#1-1-Got-15-minutes-and-want-to-learn-Git" class="headerlink" title="1.1 Got 15 minutes and want to learn Git?"></a>1.1 Got 15 minutes and want to learn Git?</h3><p>Git allows groups of people to work on the same documents (often code) at the same time, and without stepping on each other’s toes. It’s a distributed version control system.</p>
+<p>Our terminal prompt below is currently in a directory we decided to name “octobox”. To initialize a Git repository here, type the following command:</p>
+<p>Git允许一群人同时处理相同的文档（通常是代码），而不会踩在彼此的脚趾上。它是一个分布式版本控制系统。 我们的终端提示如下，目前我们决定命名为“octobox”。要在此处初始化Git存储库，请键入以下命令：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
+<p>现在就创建了一个Git储存仓库<br>并且生成了 .git文件夹 这个文件夹是用来存放有关仓库的所有的信息</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20init.png" alt="enter description here"></p>
+<h2 id="1-2-Checking-the-Status-（检查状态）"><a href="#1-2-Checking-the-Status-（检查状态）" class="headerlink" title="1.2 Checking the Status （检查状态）"></a>1.2 Checking the Status （检查状态）</h2><p> Good job! As Git just told us, our “octobox” directory now has an empty repository in /.git/. The repository is a hidden directory where Git operates.</p>
+<p>To save your progress as you go through this tutorial – and earn a badge when you successfully complete it – head over to create a free Code School account. We’ll wait for you here.</p>
+<p>Next up, let’s type the git status command to see what the current state of our project is:</p>
+<p>做得好！正如Git刚刚告诉我们的，我们的“octobox”目录现在在/.git/中有一个空的存储库。存储库是Git操作的隐藏目录。 通过本教程来节省您的进度，并在成功完成课程时获得徽章，以创建免费的Code School帐户。我们会在这里等你 接下来，我们输入git status命令来查看我们项目的当前状态：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure>
+<p>经常运行git status是很健康的。有时事情改变，你不注意它。</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20status.png" alt="
+"></p>
+<p>  可以看到当前的状态是 master 也就是主分支的状态<br>  初始化commit 检查到没有东西要提交 因为仓库中是空的现在</p>
+<h3 id="1-3-Adding-amp-Committing"><a href="#1-3-Adding-amp-Committing" class="headerlink" title="1.3 Adding &amp; Committing"></a>1.3 Adding &amp; Committing</h3><p>  I created a file called octocat.txt in the octobox repository for you (as you can see in the browser below).</p>
+<p>You should run the git status command again to see how the repository status has changed:</p>
+<p>我在octobox存储库中为您创建了一个名为octocat.txt的文件（您可以在下面的浏览器中看到）。 您应该再次运行git status命令以查看存储库状态如何更改：</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20init%201.png" alt="
+"></p>
+<blockquote>
+<p> staged:<br>  Files are ready to be committed. </p>
+</blockquote>
+<p>  这时候是用红色字体来显示的 说明文件已准备好提交。</p>
+<blockquote>
+<p>unstaged: Files with changes that have not been prepared to be<br>committed.</p>
+</blockquote>
+<p>  在检查的时候发现一个具有尚未准备提交的更改的文件</p>
+<blockquote>
+<p>  Files aren’t tracked by Git yet. This usually indicates a newly<br>created file. deleted:</p>
+</blockquote>
+<p>  Git尚未跟踪文件。这通常表示新创建的文件。 </p>
+<blockquote>
+<p>deleted:<br> File has been deleted and is waiting to be removed from Git.<br>文件已被删除，正在等待从Git中删除</p>
+</blockquote>
+<h3 id="1-4-Adding-Changes"><a href="#1-4-Adding-Changes" class="headerlink" title="1.4 Adding Changes"></a>1.4 Adding Changes</h3><p>Good, it looks like our Git repository is working properly. Notice how Git says octocat.txt is “untracked”? That means Git sees that  octocat.txt is a new file.</p>
+<p>To tell Git to start tracking changes made to octocat.txt, we first need to add it to the staging area by using git add.</p>
+<p>好的，看起来我们的Git仓库正常工作。注意Git如何说octocat.txt是“未被追踪的”？这意味着Git看到octocat.txt是一个新的文件。 要告诉Git开始跟踪对octocat.txt进行的更改，我们首先需要使用git add将其添加到暂存区域。</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20add.png" alt="
+"></p>
+<blockquote>
+<p>  add all: You can also type git add -A . where the dot stands for the<br>current directory, so everything in and beneath it is added. The -A<br>ensures even file deletions are included.</p>
+</blockquote>
+<p>您也可以输入git add -A。代表当前目录下的所有文件都被添加到暂存仓库中。 -A    确保包括文件删除。</p>
+<blockquote>
+<p>git reset: You can use git reset <code>&lt;filename&gt;</code> to remove a file or files<br>from the staging area</p>
+</blockquote>
+<p>您可以使用git reset <filename>从分段区域中删除文件。</filename></p>
+<h3 id="1-5-Checking-for-Changes"><a href="#1-5-Checking-for-Changes" class="headerlink" title="1.5 Checking for Changes"></a>1.5 Checking for Changes</h3><p>再次检查状态</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20status%202.png" alt="enter description here"></p>
+<blockquote>
+<p>  Staging Area: A place where we can group files together before we<br>“commit” them to Git. Commit</p>
+</blockquote>
+<p>暂存区域：在我们将“提交”到Git之前，我们可以将文件暂存在一起的地方。</p>
+<blockquote>
+<p>A “commit” is a snapshot of our repository. This way if we ever need<br>to look back at the changes we’ve made (or if someone else does), we<br>will see a nice timeline of all changes.</p>
+</blockquote>
+<p>一次“提交”是我们存储库的一个快照。这样，如果我们需要回顾我们所做的更改（或者如果有人做的），我们将会看到一个很好的时间轴关于这些的改变。</p>
+<h3 id="1-6-Committing"><a href="#1-6-Committing" class="headerlink" title="1.6 Committing"></a>1.6 Committing</h3><p>Notice how Git says changes to be committed? The files listed here are in the Staging Area, and they are not in our repository yet. We could add or remove files from the stage before we store them in the repository.</p>
+<p>To store our staged changes we run the commit command with a message describing what we’ve changed. Let’s do that now by typing:</p>
+<p>注意Git如何说改变被提交了？这里列出的文件位于“暂存区”中，它们不在我们的存储库中。我们可以在将它们存储在存储库之前，从暂存区添加或删除文件。 要存储我们改变了什么，我们运行commit命令，并附带一条描述我们已经更改的消息。现在我们来输入：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m <span class="string">"Add cute octocat story"</span></div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20commit.png" alt="
+"></p>
+<blockquote>
+<p>Wildcards: We need quotes so that Git will receive the wildcard before our shell can interfere with it.<br>Without quotes our shell will only execute the wildcard search within the current directory.<br>Git will receive the list of files the shell found instead of the wildcard and<br>it will not be able to add the files inside of the octofamily directory.</p>
+</blockquote>
+<p>通配符： 我们需要引号，以便在我们的shell可以干扰之前，Git会收到通配符。没有引号，我们的shell只会在当前目录中执行通配符搜索。 Git将收到shell找到的文件列表，而不是通配符，它​​将无法在octofamily目录中添加文件。</p>
+<h3 id="1-7-Adding-All-Changes"><a href="#1-7-Adding-All-Changes" class="headerlink" title="1.7 Adding All Changes"></a>1.7 Adding All Changes</h3><p>  Great! You also can use wildcards if you want to add many files of the same type. Notice that I’ve added a bunch of .txt files into your directory below.</p>
+<p>I put some in a directory named “octofamily” and some others ended up in the root of our “octobox” directory. Luckily, we can add all the new files using a wildcard with git add. Don’t forget the quotes!</p>
+<p>棒极了，如果要添加相同类型的许多文件，也可以使用通配符。请注意，我已经将一堆.txt文件添加到您的目录下面。 一个名为“octofamily”的目录中有两个，其他一些最终在我们的“octobox”目录的根。幸运的是，我们可以使用git add通配符添加所有新文件。不要忘记引号！</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20add%202.png" alt="
+"></p>
+<blockquote>
+<p>Check all the things!<br>When using wildcards you want to be extra careful when doing commits. Make sure to check what files and folders &gt;are staged by using git status before you do the actual commit. This way you can be sure you’re committing only the things you want.</p>
+</blockquote>
+<p>检查所有的事情！ 当使用通配符时，你在做提交时要特别小心。确保在执行实际提交之前使用git status检查要暂存的文件和文件夹。这样，你可以确保你t提交的只是你想要的东西。</p>
+<h3 id="1-8-Committing-All-Changes"><a href="#1-8-Committing-All-Changes" class="headerlink" title="1.8 Committing All Changes"></a>1.8 Committing All Changes</h3><p>  Okay, you’ve added all the text files to the staging area. Feel free to run git status to see what you’re about to commit.</p>
+<p>If it looks good, go ahead and run:</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20m%202.png" alt="
+"></p>
+<blockquote>
+<p>More useful logs:<br>Use git log<br> –summary to see more information for<br>each commit. You can see where new files were added for the first time<br>or where files were deleted. It’s a good overview of what’s going on in the project.</p>
+</blockquote>
+<p>更有用的日志： 使用git log –summary查看每个提交的更多信息。您可以看到第一次添加新文件的位置或删除文件的位置。这是一个很好的概述，在项目中发生了什么。</p>
+<h3 id="1-9-History"><a href="#1-9-History" class="headerlink" title="1.9 History"></a>1.9 History</h3><p>So we’ve made a few commits. Now let’s browse them to see what we changed.</p>
+<p>Fortunately for us, there’s git log. Think of Git’s log as a journal that remembers all the changes we’ve committed so far, in the order we committed them. Try running it now:</p>
+<p>所以我们做了一些提交。现在让我们浏览他们看看我们改变了什么。 幸运的是，我们有git log。想想Git的日志是一本记录，记录我们迄今为止所做的所有变化，按照我们提交的顺序。尝试运行它：</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20log.png" alt="
+"></p>
+<blockquote>
+<p>git remote:<br> Git doesn’t care what you name your remotes, but it’s typical to name your main one origin.<br>  It’s also a good idea for your main repository to be on a remote server like GitHub in case your<br>machine is lost at sea during a transatlantic boat cruise or crushed<br>by three monkey statues during an earthquake.</p>
+</blockquote>
+<p>git远程 Git不在乎你命名你的远程，但它的典型名称是你的主要来源（orign）。 如果您的主机位于远程服务器，如GitHub，如果您的机器在海洋中丢失，在跨大西洋的船只巡航或在地震期间被三只猴子雕像压碎，这也是一个好主意。</p>
+<h3 id="1-10-Remote-Repositories（远程仓库）"><a href="#1-10-Remote-Repositories（远程仓库）" class="headerlink" title="1.10 Remote Repositories（远程仓库）"></a>1.10 Remote Repositories（远程仓库）</h3><p>Great job! We’ve gone ahead and created a new empty GitHub repository for you to use with Try Git at  <a href="https://github.com/try-git/try_git.git" target="_blank" rel="external">https://github.com/try-git/try_git.git</a>. To push our local repo to the GitHub server we’ll need to add a remote repository.</p>
+<p>This command takes a remote name and a repository URL, which in your case is <a href="https://github.com/try-git/try_git.git" target="_blank" rel="external">https://github.com/try-git/try_git.git</a>.</p>
+<p>Go ahead and run git remote add with the options below:</p>
+<p>做得好！我们已经开始创建了一个新的空的GitHub存储库，供您与Try Git一起使用，网址为https：//github.com/try-git/try_git.git。要将我们的本地repo推送到GitHub服务器，我们需要添加一个远程仓库。 此命令使用远程名称和存储库URL，在您的情况下，它是<a href="https://github.com/try-git/try_git.git。" target="_blank" rel="external">https://github.com/try-git/try_git.git。</a> 继续运行git远程添加与以下选项：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin https:<span class="comment">//github.com/try-git/try_git.git</span></div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20remote.png" alt="
+"></p>
+<blockquote>
+<p>Cool Stuff:<br>When you start to get the hang of git you can do some really cool things with hooks when you push.<br>For example, you can upload directly to a webserver whenever you push to your master remote<br>instead of having to upload your site with an ftp client. Check out<br>Customizing Git - Git Hooks for more information.</p>
+</blockquote>
+<p>很酷的东西： 当你开始得到git的挂起，你可以做一些非常酷的东西与钩子，当你push。 例如，您可以直接上传到网络服务器，只要您推送到主控远程，而不必使用ftp客户端上传您的站点。查看自定义Git - Git Hooks了解更多信息。</p>
+<h3 id="1-11-Pushing-Remotely"><a href="#1-11-Pushing-Remotely" class="headerlink" title="1.11 Pushing Remotely"></a>1.11 Pushing Remotely</h3><p>The push command tells Git where to put our commits when we’re ready, and now we’re ready. So let’s push our local changes to our origin repo (on GitHub).</p>
+<p>The name of our remote is origin and the default local branch name is master. The -u tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and push it!</p>
+<p>push命令告诉Git当我们准备好时，在哪里放置我们的提交，现在我们准备好了。所以我们把我们的地方变化推到我们的起始地位（在GitHub上）。 我们的远程的名称是origin，默认的本地分支名称是master。 -u告诉Git记住参数，所以下次我们可以简单的运行git push，Git会知道该怎么做。继续推动！</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20push.png" alt="
+"></p>
+<h3 id="1-12-Pulling-Remotely"><a href="#1-12-Pulling-Remotely" class="headerlink" title="1.12 Pulling Remotely"></a>1.12 Pulling Remotely</h3><p>Let’s pretend some time has passed. We’ve invited other people to our GitHub project who have pulled your changes, made their own commits, and pushed them.</p>
+<p>We can check for changes on our GitHub repository and pull down any new changes by running:</p>
+<p>假设有一段时间过去了我们邀请其他人加入我们的GitHub项目，他们已经拉下了你的修改，提交了自己的提交，并推送他们。 我们可以检查我们的GitHub存储库中的更改，并通过运行以下命令来删除任何新的更改</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20pull.png" alt="
+"></p>
+<blockquote>
+<p>HEAD<br>The HEAD is a pointer that holds your position within all your<br>different commits. By default HEAD points to your most recent commit,<br>so it can be used as a quick way to reference that commit without<br>having to look up the SHA.</p>
+</blockquote>
+<p>头 HEAD是一个指针，可以在您所有不同的提交内保持您的位置。默认情况下，HEAD指向您最近的提交，因此可以将其用作引用该提交的快速方式，而无需查找SHA</p>
+<h3 id="1-13-Differences"><a href="#1-13-Differences" class="headerlink" title="1.13 Differences"></a>1.13 Differences</h3><p>Uh oh, looks like there have been some additions and changes to the octocat family. Let’s take a look at what is different from our last commit by using the git diff command.</p>
+<p>In this case we want the diff of our most recent commit, which we can refer to using the HEAD pointer.</p>
+<p>呃哦，看起来已经有了一些补充和改变octocat家庭。让我们通过使用git diff命令来看看与上一次提交不同的是什么。 在这种情况下，我们需要我们最近提交的diff，我们可以参考使用HEAD指针。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff HEAD</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20diff.png" alt="
+"></p>
+<blockquote>
+<p>Commit Etiquette:<br> You want to try to keep related changes together in separate commits. Using ‘git diff’ gives you a good overview of<br>changes you have made and lets you add files or directories one at a<br>time and commit them separately.</p>
+</blockquote>
+<p>提交礼仪： 您想尝试将相关更改保留在单独的提交中。使用’git diff’可以很好地概述所做的更改，并允许您一次添加一个文件或目录，并单独提交它们。</p>
+<h3 id="1-14-Staged-Differences"><a href="#1-14-Staged-Differences" class="headerlink" title="1.14 Staged Differences"></a>1.14 Staged Differences</h3><p>Another great use for diff is looking at changes within files that have already been staged. Remember, staged files are files we have told git that are ready to be committed.</p>
+<p>Let’s use git add to stage octofamily/octodog.txt, which I just added to the family for you.</p>
+<p>diff的另一个很好的用途是查看已经上架的文件中的更改。记住，暂存文件是我们已经告诉git的文件，可以提交。 让我们使用git add来分配octofamily / octodog.txt，我刚刚为你添加了家庭。</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">add</span><span class="bash"> octofamily/octodog.txt</span></div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20add3.png" alt="
+"></p>
+<h3 id="1-15-Staged-Differences-cont’d"><a href="#1-15-Staged-Differences-cont’d" class="headerlink" title="1.15 Staged Differences (cont’d)"></a>1.15 Staged Differences (cont’d)</h3><p>Good, now go ahead and run git diff with the –staged option to see the changes you just staged. You should see that octodog.txt was created.<br>好，现在继续运行git diff与–staged选项，以查看刚刚暂存的更改。你应该看到octodog.txt被创建。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff <span class="comment">--staged</span></div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20diff%20--stage.png" alt="enter description here"></p>
+<h3 id="1-16-Resetting-the-Stage"><a href="#1-16-Resetting-the-Stage" class="headerlink" title="1.16 Resetting the Stage"></a>1.16 Resetting the Stage</h3><p>So now that octodog is part of the family, octocat is all depressed. Since we love octocat more than octodog, we’ll turn his frown around by removing octodog.txt.</p>
+<p>You can unstage files by using the git reset command. Go ahead and remove octofamily/octodog.txt.</p>
+<p>所以现在octodog是家庭的一部分，octocat是所有郁闷。因为我们喜欢octocat超过octodog，我们将转过他的皱眉，删除octodog.txt。 您可以使用git reset命令来解压缩文件。继续去除octofamily / octodog.txt。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">reset</span> octofamily/octodog.txt</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20reset.png" alt="
+"></p>
+<blockquote>
+<p>The ‘–’<br>So you may be wondering, why do I have to use this ‘–’ thing? git checkout seems to work fine without it. It’s simply &gt;promising the command line that there are no more options after the ‘–’. This way if you happen to have a branch &gt;named octocat.txt, it  will still revert the file, instead of switching to the branch of the<br>same name.</p>
+</blockquote>
+<p>‘ - ‘ 所以你可能会想，为什么我必须使用这个’ - ‘的东西？ git结帐似乎工作正常没有它。它只是承诺命令行，在’ - ‘之后没有更多的选项。这样，如果碰巧有一个名为octocat.txt的分支，它仍然会还原文件，而不是切换到相同名称的分支。</p>
+<h3 id="1-17-Undo"><a href="#1-17-Undo" class="headerlink" title="1.17 Undo"></a>1.17 Undo</h3><p>git reset did a great job of unstaging octodog.txt, but you’ll notice that he’s still there. He’s just not staged anymore. It would be great if we could go back to how things were before octodog came around and ruined the party.</p>
+<p>Files can be changed back to how they were at the last commit by using the command: git checkout – <target>. Go ahead and get rid of all the changes since the last commit for octocat.txt</target></p>
+<p>git reset做了一个伟大的工作，不在暂存octodog.txt，但你会注意到，他还在那里。他只是没有在暂存区了。如果我们可以回到上次的时候，那将是很美好的。 可以使用以下命令将文件更改回上次提交的方式：git checkout - <code>&lt;target&gt;</code>。继续前进，摆脱上次提交octocat.txt以来的所有更改</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -- octocat.txt</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/checkout.png" alt="
+"></p>
+<blockquote>
+<p>Branching<br> Branches are what naturally happens when you want to work on<br>multiple features at the same time. You wouldn’t want to end up with a<br>master branch which has Feature A half done and Feature B half done.<br>Rather you’d separate the code base into two “snapshots” (branches)<br>and work on and commit to them separately. As soon as one was ready,<br>you might merge this branch back into the master branch and push it to<br>the remote server.</p>
+</blockquote>
+<p>分枝 当您想同时处理多个功能时，分支机构是自然会发生的。你不想结束一个主分支，其中功能A一半完成，功能B一半完成。 相反，你会将代码库分成两个“快照”（分支），并分别处理和提交。一旦准备就绪，您可以将该分支合并回主分支并将其推送到远程服务器。</p>
+<h3 id="1-18-Branching-Out"><a href="#1-18-Branching-Out" class="headerlink" title="1.18 Branching Out"></a>1.18 Branching Out</h3><p>When developers are working on a feature or bug they’ll often create a copy (aka. branch) of their code they can make separate commits to. Then when they’re done they can merge this branch back into their main master branch.</p>
+<p>We want to remove all these pesky octocats, so let’s create a branch called clean_up, where we’ll do all the work:</p>
+<p>当开发人员正在开发一个功能或错误时，他们经常会创建一个他们的代码的副本（也称为分支），他们可以单独提交。然后当他们完成后，他们可以合并这个分支回他们的主要分支。 我们想删除所有这些讨厌的octocats，所以让我们创建一个名为clean_up的分支，我们将在其中完成所有的工作：</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git branch clean_up</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20branch.png" alt="enter description here"></p>
+<blockquote>
+<p>You can use:<br>git checkout -b new_branch to checkout and create a<br>branch at the same time. This is the same thing as doing: git branch<br>new_branch git checkout new_branch</p>
+</blockquote>
+<p>中文(简体)<br>您可以使用： git checkout -b new_branch 同时创建并且创建一个分支。他们和这样是在做事情： git branch new_branch git checkout new_branch</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/gitcheckout.png" alt="
+"></p>
+<blockquote>
+<p>Remove all the things!<br> Removing one file is great and all, but what if you want to remove an entire folder?<br> You can use the recursive option on <code>git rm: git rm -r folder_of_cats</code> This will recursively remove all<br>folders and files from the given directory.</p>
+</blockquote>
+<p>删除一个文件是伟大的，所有，但如果要删除整个文件夹怎么办？您可以在git rm上使用递归选项： git rm -r folder_of_cats 这将递归地删除给定目录中的所有文件夹和文件。</p>
+<h3 id="1-20-Removing-All-The-Things"><a href="#1-20-Removing-All-The-Things" class="headerlink" title="1.20 Removing All The Things"></a>1.20 Removing All The Things</h3><p>Ok, so you’re in the clean_up branch. You can finally remove all those pesky octocats by using the git rm command which will not only remove the actual files from disk, but will also stage the removal of the files for us.</p>
+<p>You’re going to want to use a wildcard again to get all the octocats in one sweep, go ahead and run:</p>
+<p>的，所以你在clean_up分支。您可以使用git rm命令，最终删除所有那些讨厌的octocats，它不仅可以从磁盘中删除实际的文件，还可以为我们移除文件。 您将要再次使用通配符将所有octocats一次性扫描，然后运行：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">git</span> rm <span class="string">'*.txt'</span></div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20remove.png" alt="
+"></p>
+<blockquote>
+<p>The ‘-a’ option<br> If you happen to delete a file without using ‘git rm’<br>you’ll find that you still have to <code>&#39;git rm&#39;</code> the deleted files from the working tree.<br> You can save this step by using the ‘-a’ option on <code>&#39;git commit&#39;</code>, which auto removes deleted files with the commit. <code>git commit  -am &quot;Delete stuff&quot;</code></p>
+</blockquote>
+<p>‘-a’选项 如果你碰巧删除一个文件而不使用’git rm’，你会发现你仍然需要从工作树中删除已删除的文件。您可以使用’git commit’上的’-a’选项来保存此步骤，该选项会通过提交自动删除已删除的文件。 git commit -am“删除东西”</p>
+<h3 id="1-21-Commiting-Branch-Changes"><a href="#1-21-Commiting-Branch-Changes" class="headerlink" title="1.21 Commiting Branch Changes"></a>1.21 Commiting Branch Changes</h3><p>Now that you’ve removed all the cats you’ll need to commit your changes.</p>
+<p>Feel free to run git status to check the changes you’re about to commit.<br>现在你已经删除了所有需要提交更改的猫。 随意运行git状态以检查您要提交的更改。</p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/git%20comm%20-m%20remive.png" alt="
+"></p>
+<h3 id="1-22-Switching-Back-to-master"><a href="#1-22-Switching-Back-to-master" class="headerlink" title="1.22 Switching Back to master"></a>1.22 Switching Back to master</h3><p>Great, you’re almost finished with the cat… er the bug fix, you just need to switch back to the master branch so you can copy (or  merge) your changes from the clean_up branch back into the master branch.</p>
+<p>Go ahead and checkout the master branch:<br>好的，你几乎完成了这个错误修复，你只需要切换回主分支，所以你可以将你的更改从clean_up分支复制（或合并）到主分支中。 继续检查主分支：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">git</span> checkout master</div></pre></td></tr></table></figure>
+<p>Pull Requests<br>If you’re hosting your repo on GitHub, you can do something called a pull request.<br>A pull request allows the boss of the project to look through your changes and make comments before deciding to merge in the change. It’s a really great feature that is used all the time for remote workers and open-source projects.<br>Check out the pull request help page for more information.</p>
+<p>拉取请求 如果您在GitHub上托管您的项目，您可以进行一些称为拉动请求的操作。 拉动请求允许项目的老板在决定合并更改之前，先查看更改并发表评论。这是一个非常好的功能，它一直用于远程工作和开源项目。 请查看拉动请求帮助页面以获取更多信息。</p>
+<h3 id="1-23-Preparing-to-Merge"><a href="#1-23-Preparing-to-Merge" class="headerlink" title="1.23 Preparing to Merge"></a>1.23 Preparing to Merge</h3><p>Alrighty, the moment has come when you have to merge your changes from the clean_up branch into the master branch. Take a deep breath, it’s not that scary.</p>
+<p>We’re already on the master branch, so we just need to tell Git to merge the clean_up branch into it:</p>
+<p>好的，当你必须将clean_up分支中的更改合并到主分支时，现在已经到了。深吸一口气，这不是那么可怕。 我们已经在主分支上，所以我们只需要告诉Git将clean_up分支合并到它中：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">merge</span> clean_up</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/checkout%20master.png" alt="
+"></p>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/merge%20clean.png" alt="
+"></p>
+<blockquote>
+<p>Merge Conflicts<br>Merge Conflicts can occur when changes are made to a<br>file at the same time. A lot of people get really scared when a<br>conflict happens, but fear not! They aren’t that scary, you just need<br>to decide which code to keep. Merge conflicts are beyond the scope of<br>this course, but if you’re interested in reading more, take a look the<br>section of the Pro Git book on how conflicts are presented.</p>
+</blockquote>
+<p>合并冲突 合并冲突可能会发生在同时对文件进行更改时。很多人在发生冲突时真的害怕，但不要害怕！他们不是那么可怕，你只需要决定保留哪些代码。 合并冲突超出了本课程的范围，但如果您有兴趣阅读更多内容，请查看Pro Git书中有关如何呈现冲突的部分</p>
+<blockquote>
+<p>Force delete<br>What if you have been working on a feature branch and you<br>decide you really don’t want this feature anymore? You might decide to<br>delete the branch since you’re scrapping the idea. You’ll notice that<br><code>git branch -d bad_feature</code> doesn’t work. This is because -d won’t let<br>you delete something that hasn’t been merged. You can either add the<br><code>--force (-f)</code> option or use -D which combines <code>-d -f</code> together into one command.</p>
+</blockquote>
+<p>强制删除 如果您在功能部门工作，而且您决定不再需要此功能，该怎么办？你可能会决定删除分支，你会注意到git branch -d bad_feature不工作。这是因为-d不会让您删除未合并的内容。 您可以添加–force（-f）选项，或者使用-D组合-d -f到一个命令中。</p>
+<h3 id="1-24-Keeping-Things-Clean"><a href="#1-24-Keeping-Things-Clean" class="headerlink" title="1.24 Keeping Things Clean"></a>1.24 Keeping Things Clean</h3><p>Congratulations! You just accomplished your first successful bugfix and merge. All that’s left to do is clean up after yourself. Since you’re done with the clean_up branch you don’t need it anymore.</p>
+<p>You can use git branch -d <code>&lt;branch name&gt;</code> to delete a branch. Go ahead and delete the clean_up branch now:</p>
+<p>恭喜！你刚刚完成了你的第一个成功的修正和合并。所有剩下要做的就是清理自己。因为你已经完成了clean_up分支，你不再需要它。 你可以使用git branch -d <code>&lt;branch name&gt;</code>删除一个分支。继续并删除clean_up分支：</p>
+<h3 id="1-25-The-Final-Push"><a href="#1-25-The-Final-Push" class="headerlink" title="1.25 The Final Push"></a>1.25 The Final Push</h3><p>Here we are, at the last step. I’m proud that you’ve made it this far, and it’s been great learning Git with you. All that’s left for you to do now is to push everything you’ve been working on to your remote repository, and you’re done!</p>
+<p>在这里，我们在最后一步。我很自豪，你已经做到这一点，这是伟大的学习Git与你。现在剩下的一切就是把你一直在做的一切都推送到你的远程仓库，你已经完成了！</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push</div></pre></td></tr></table></figure>
+<p><img src="http://github-neng.oss-cn-hangzhou.aliyuncs.com/git_learn/push.png" alt="enter description here"></p>
+<p>Learning more about Git<br>We only scratched the surface of Git in this course. There is so much more you can do with it. Check out the Git documentation for a full list of functions.<br>The Pro Git book, by Scott Chacon, is an excellent resource to teach you the inner workings of Git.<br>help.github and GitHub Training are also great for anything related to Git in general and using Git with GitHub.</p>
+<p>学习更多关于Git 我们在这个课程中只刮了Git的表面。还有更多的你可以做到这一点。查看Git文档的完整功能列表。 由Scott Chacon撰写的Pro Git书是教你Git内部工作的绝佳资源。 help.github和GitHub培训对于与Git有关的任何事情也是非常好的，并且使用Git与GitHub。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/04/11/hello-world/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="marnner's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        marnner@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="marnner@qq.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                标签
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">2</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+    <span id="footer-image">
+        <a href="https://www.upyun.com/" target="_blank" title="upyun_logo">
+            <img src="/img/upyun_logo.png" alt="upyun_logo">
+        </a>
+    </span>
+
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;Marnner
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('OoSlDSbIliFRAyiYasybSCBF-gzGzoHsz', 'wBoYp7LTE4ztlVNlSlVyd3by');
+    </script>
+    <script>
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+
+                </main>
+            </div>
+        </body>
+    
+</html>
